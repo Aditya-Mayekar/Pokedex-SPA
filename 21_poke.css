@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/*-----Navbar css starts-----*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #222;
+    overflow: hidden;
+    display: flex;
+    gap: 5px;
+    justify-content:center;
+    align-items: center;
+    color: red;
+  }
+
+  .header-title {
+    margin-left: 5px;
+    font-size: 35px;
+  }
+  
+  /*-----Navbar css ends-----*/
+
+
+
+  /*-----Body css starts-----*/
+  .container {
+    display: flex;
+    width: 100%;
+    background-color: lightcyan;
+  }
+
+  .optionslist {
+    display: inline-block;
+    flex: 25%;
+    margin: 10px;
+    max-width: 450px;
+    box-sizing: border-box;
+    padding-top: 20px; 
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .optionslist li{
+    margin: 5px 0px;
+  }
+
+  .singleoption {
+    text-decoration: none;
+    display: flex;
+  }
+
+  .icon {
+    flex: 1%;
+    justify-content: center;
+  }
+
+  .names {
+    flex: 80%;
+    justify-content: center;
+    color:#222;
+    font-weight: 400;
+  }
+
+  .mainbody {
+    display: flex;
+    flex: 75%;
+    margin: 10px;
+    box-sizing: border-box; 
+  }
+  /*-----Body css ends-----*/
+
+
+
+  /* ----- main body images css starts----- */
+  .image {
+    margin-top: 130px;
+    margin-left: 15px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 100%;
+    transition: 200ms all;
+}
+
+.fire {
+  background: #FBA54C;
+  box-shadow: 0 0 20px #FBA54C;
+}
+
+.water {
+  background: #539DDF;
+  box-shadow: 0 0 20px #539DDF;
+}
+
+.grass {
+  background: #5FBD58;
+  box-shadow: 0 0 20px #5FBD58;
+}
+
+.electric {
+  background: #F2D94E;
+  box-shadow: 0 0 20px #F2D94E;
+}
+
+.ghost {
+  background: #5F6DBC;
+  box-shadow: 0 0 20px #5F6DBC;
+}
+
+.image:hover{
+  filter: saturate(200%);
+  transform: scale(1.1);
+  cursor: pointer;
+} 
+
+.image img{
+    height: 150px; 
+    width: 150px;
+}
+
+.statements {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width:100%;
+    min-height: 290px;
+}
+/* ----- main body images css ends----- */
+
+
+
+  /*-----Footer css starts-----*/
+  footer {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    align-items: center;
+  }
+
+  footer :nth-child(1){
+    flex: 100%;
+    margin-right: 50px;
+  }
+
+  footer .sec{
+    width: 50%;
+  }
+
+  footer .sec h2{
+    color: red;
+    font-size: 30px;
+  }
+
+  footer .sec p{
+    color:#fff;
+  }
+
+  footer .sec li{
+    color:#fff;
+    margin: 10px 0px;
+  }
+
+  /*-----Footer css ends-----*/
+
+
+

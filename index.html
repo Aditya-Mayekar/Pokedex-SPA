@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke Guide</title>
+    <link rel="stylesheet" href="21_poke.css">
+    <script src="angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+    <script src="21_pokecontroller.js"></script>
+</head>
+<body>
+    <!-- Navbar starts -->
+    <header>
+        <img src="icons/pokedexicon.png"/>
+        <h2 class="header-title">Pokédex</h2>
+    </header>
+    <!-- Navbar ends -->
+    <!-- Main body starts -->
+    <div class="container">
+        <div class="optionslist" style="border: 2px solid black">
+            <h3>Different Pokemon Types: </h3>
+            <ul>
+                <li><a href="#!" class="singleoption">
+                    <div class="icon">
+                        <img src="icons/fireicon.png" width="20" height="20"/>
+                    </div>
+                    <div class="names">
+                        Fire type
+                    </div>
+                </a></li>
+                <li><a href="#!water" class="singleoption">
+                    <div class="icon">
+                        <img src="icons/watericon.png" width="20" height="20"/>
+                    </div>
+                    <div class="names">
+                        Water type
+                    </div>
+                </a></li>
+                <li><a href="#!grass" class="singleoption">
+                    <div class="icon">
+                        <img src="icons/grassicon.png" width="20" height="20"/>
+                    </div>
+                    <div class="names">
+                        Grass type
+                    </div>
+                </a></li>
+                <li><a href="#!electric" class="singleoption">
+                    <div class="icon">
+                        <img src="icons/electricicon.png" width="20" height="20"/>
+                    </div>
+                    <div class="names">
+                        Electric type
+                    </div>
+                </a></li>
+                <li><a href="#!ghost" class="singleoption">
+                    <div class="icon">
+                        <img src="icons/ghosticon.png" width="20" height="20"/>
+                    </div>
+                    <div class="names">
+                        Ghost type
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+
+        <div class="mainbody" ng-view>
+        </div>
+    </div>
+    <!-- Main body ends -->
+    <!-- Footer starts -->
+    <footer>
+        <div class="sec">
+            <h2 class="sec">Pokédex</h2>
+            <p>The Pokédex, created by Professor Oak, is a vital tool for Pokémon Trainers. This electronic device catalogs and provides essential information about various Pokémon species. With a sleek design and digital interface, it updates automatically as Trainers capture new Pokémon, offering valuable insights for battles and enriching the Trainer's journey of exploration and discovery in the Pokémon world.</p>
+        </div>
+        <div class="sec">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>info@email.pokemon.com</li>
+                <li>+91 9989542146</li>
+                <li>Tokyo, Japan</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+</body>
+</html>
